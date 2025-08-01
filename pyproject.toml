@@ -1,0 +1,15 @@
+[project]
+name = "klayout-converter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+  { name = "Valentin Boettcher", email = "kl@protagon.space" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "klayout>=0.30.2",
+]
+
+[project.scripts]
+klayout-converter = "klayout_converter:main"
