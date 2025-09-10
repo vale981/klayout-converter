@@ -144,7 +144,7 @@ def main():
         "-t",
         "--top-cell",
         type=str,
-        default="devicegen",
+        default="TOP",
         help="The name of the cell containing the shapes to be imported.",
     )
 
