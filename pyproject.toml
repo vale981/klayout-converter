@@ -13,3 +13,7 @@ dependencies = [
 
 [project.scripts]
 klayout-converter = "klayout_converter:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
