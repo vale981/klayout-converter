@@ -75,7 +75,7 @@ def load_klayout(
         file_path: The path to the ``OASIS`` file.
         cell: The name of the cell that the device is specified in.
         name_property: The user property that contains the name of a shape.
-        length_unit_exponent: The exponent of the power of ten of the length unit
+        length_unit_exponent: The exponent of the power of ten of the length unit to be used in devicegen
                 relative to meters.
 
     Returns:
@@ -161,7 +161,10 @@ def main():
         "--length-unit",
         type=int,
         default=-9,
-        help="The exponent of the power of ten of the length unit relative to meters.",
+        help=(
+            "The exponent of the power of ten of the length unit used in devicegen relative to meters. "
+            "Defaults to nanometers."
+        ),
     )
 
     args = parser.parse_args()
